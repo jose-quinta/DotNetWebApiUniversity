@@ -15,36 +15,44 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\José Quintana\Desktop\api\DotNetWebApiUniversity\Client
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Career/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZWVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Career/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZWVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Career/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZWVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Career/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZWVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Career/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZWVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Career/_CareerCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZWVyXF9DYXJlZXJDcmVhdGUuY3NodG1s
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Faculty/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Career/_CareerDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZWVyXF9DYXJlZXJEZXRhaWxzLmNzaHRtbA==
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Faculty/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Career/_CareerEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZWVyXF9DYXJlZXJFZGl0LmNzaHRtbA==
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Faculty/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Faculty/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Faculty/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Faculty/_FacultyCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxfRmFjdWx0eUNyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Faculty/_FacultyDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxfRmFjdWx0eURldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Faculty/_FacultyEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdWx0eVxfRmFjdWx0eUVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Home/Index.cshtml]
@@ -55,20 +63,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/School/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Nob29sXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/School/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Nob29sXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/School/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Nob29sXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/School/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Nob29sXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/School/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Nob29sXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/School/_SchoolCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Nob29sXF9TY2hvb2xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/School/_SchoolDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Nob29sXF9TY2hvb2xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/School/_SchoolEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Nob29sXF9TY2hvb2xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/José Quintana/Desktop/api/DotNetWebApiUniversity/Client/Views/Shared/Error.cshtml]

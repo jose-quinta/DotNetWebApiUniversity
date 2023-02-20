@@ -35,21 +35,16 @@ namespace Client.Controllers {
 
             return Json(new SelectList(response, "Id", "Name"));
         }
-        public async Task<ActionResult<Faculty>> Details(int? id, string type) {
-            if (id == null)
-                return PartialView($"_Faculty{type}");
-
+        public async Task<ActionResult<Faculty>> Details(int id) {
             var response = new Faculty();
             using (var _api = await _http.GetAsync(_url + id)) {
                 string _response = await _api.Content.ReadAsStringAsync();
                 response = JsonConvert.DeserializeObject<Faculty>(_response)!;
             }
 
-            if (response == null)
-                return RedirectToAction(nameof(Index));
-
-            return PartialView($"_Faculty{type}", response);
+            return View(response);
         }
+        public ActionResult Create() => View();
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult<List<Faculty>>> Create(Faculty request) {
@@ -70,13 +65,22 @@ namespace Client.Controllers {
             }
 
             if (response == null)
-                return RedirectToAction(nameof(Index));
+                return View();
 
             return RedirectToAction(nameof(Index));
         }
+        public async Task<ActionResult<Faculty>> Edit(int id) {
+            var response = new Faculty();
+            using (var _api = await _http.GetAsync(_url + id)) {
+                string _response = await _api.Content.ReadAsStringAsync();
+                response = JsonConvert.DeserializeObject<Faculty>(_response)!;
+            }
+
+            return View(response);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult<Faculty>> Update(Faculty request) {
+        public async Task<ActionResult<Faculty>> Edit(Faculty request) {
             if (request ==  null)
                 return RedirectToAction(nameof(Index));
 
@@ -94,13 +98,22 @@ namespace Client.Controllers {
             }
 
             if (response == null)
-                return RedirectToAction(nameof(Index));
+                return View();
 
             return RedirectToAction(nameof(Index));
         }
+        public async Task<ActionResult<Faculty>> Delete(int id) {
+            var response = new Faculty();
+            using (var _api = await _http.GetAsync(_url + id)) {
+                string _response = await _api.Content.ReadAsStringAsync();
+                response = JsonConvert.DeserializeObject<Faculty>(_response)!;
+            }
+
+            return View(response);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult<Faculty>> Delete(int id) {
+        public async Task<ActionResult<Faculty>> Delete(int id, Faculty request) {
             var response = new Faculty();
 
             using(var _api = await _http.DeleteAsync(_url + id)) {
@@ -109,7 +122,7 @@ namespace Client.Controllers {
             }
 
             if (response == null)
-                return RedirectToAction(nameof(Index));
+                return View();
 
             return RedirectToAction(nameof(Index));
         }

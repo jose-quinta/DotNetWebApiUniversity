@@ -1,0 +1,56 @@
+@model Client.Models.Faculty
+
+@{
+    var br = "\n";
+    var cname = "\tCareer: ";
+    var sname = "School: ";
+}
+
+<div class="row col-12 col-sm-10 col-md-8 m-auto">
+    <form asp-controller="Faculty" asp-action="Delete" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <h1 class="text-center my-3 fs-4">Delete Faculty</h1>
+        <input asp-for="Id" hidden />
+        <div class="form-group row my-1">
+            <div class="col-4">
+                <label asp-for="Name" class="form-label"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Name" readonly class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row my-1">
+            <div class="col-4">
+                <label asp-for="Code" class="form-label"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Code" readonly class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row my-1">
+            <div class="col-12">
+                <label asp-for="Schools" class="form-label"></label>
+            </div>
+            <div class="col-12">
+                <textarea rows="5" readonly class="form-control">
+                @foreach (var school in Model.Schools) {
+                    @sname @school.Name @br
+                    @foreach (var career in school.Careers) {
+                        @cname @career.Name @br
+                    }
+                }
+                </textarea>
+            </div>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="form-group row col-12 col-sm-10 col-md-9 col-lg-8 mx-auto">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-danger form-control">Delete</button>
+                </div>
+                <div class="col-6">
+                    <a asp-controller="Faculty" asp-action="Index" class="btn btn-secondary form-control">Return to List</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

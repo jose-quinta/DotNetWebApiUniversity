@@ -1,0 +1,42 @@
+@model Client.Models.School
+
+<div class="row col-12 col-sm-10 col-md-8 m-auto">
+    <form asp-controller="School" asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <h1 class="text-center my-3 fs-4" id="modalLabel">Create New School</h1>
+        <div class="form-group row my-1">
+            <div class="col-4">
+                <label asp-for="Name" class="form-label"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Name" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row my-1">
+            <div class="col-4">
+                <label asp-for="Code" class="form-label"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="Code" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row my-1">
+            <div class="col-4">
+                <label asp-for="Faculty" class="form-label"></label>
+            </div>
+            <div class="col-8">
+                <input asp-for="FacultyId" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="form-group row col-12 col-sm-10 col-md-9 col-lg-8 mx-auto">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary form-control">Create School</button>
+                </div>
+                <div class="col-6">
+                    <a asp-controller="School" asp-action="Index" class="btn btn-secondary form-control">Return to List</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

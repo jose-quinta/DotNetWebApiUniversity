@@ -5,11 +5,8 @@
     var cname = "Career: ";
 }
 
-<div class="modal-header">
-    <h1 class="modal-title fs-4" id="modalLabel">Details School</h1>
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-</div>
-<div class="modal-body overflow-y-auto">
+<div class="row col-12 col-sm-10 col-md-8 m-auto">
+    <h1 class="text-center my-3 fs-4">Details School</h1>
     <div class="form-group row my-1">
         <div class="col-4">
             <label asp-for="Name" class="form-label"></label>
@@ -46,7 +43,14 @@
             </textarea>
         </div>
     </div>
-</div>
-<div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <div class="form-group row mt-3">
+        <div class="form-group row col-12 col-sm-10 col-md-9 col-lg-8 mx-auto">
+            <div class="col-6">
+                <a asp-controller="School" asp-action="Edit" asp-route-Id="@Model.Id" class="btn btn-primary form-control">Edit</a>
+            </div>
+            <div class="col-6">
+                <a asp-controller="School" asp-action="Index" class="btn btn-secondary form-control">Return to List</a>
+            </div>
+        </div>
+    </div>
 </div>

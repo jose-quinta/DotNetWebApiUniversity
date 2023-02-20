@@ -25,21 +25,16 @@ namespace Client.Controllers {
 
             return View(response);
         }
-        public async Task<ActionResult<Career>> Details(int? id, string type) {
-            if (id == null)
-                return PartialView($"_Career{type}");
-
+        public async Task<ActionResult<Career>> Details(int id) {
             var response = new Career();
             using (var _api = await _http.GetAsync(_url + id)) {
                 string _response = await _api.Content.ReadAsStringAsync();
                 response = JsonConvert.DeserializeObject<Career>(_response)!;
             }
 
-            if (response == null)
-                return RedirectToAction(nameof(Index));
-
-            return PartialView($"_Career{type}", response);
+            return View(response);
         }
+        public ActionResult Create() => View();
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult<List<Career>>> Create(Career request) {
@@ -65,9 +60,18 @@ namespace Client.Controllers {
 
             return RedirectToAction(nameof(Index));
         }
+        public async Task<ActionResult<Career>> Edit(int id) {
+            var response = new Career();
+            using (var _api = await _http.GetAsync(_url + id)) {
+                string _response = await _api.Content.ReadAsStringAsync();
+                response = JsonConvert.DeserializeObject<Career>(_response)!;
+            }
+
+            return View(response);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult<Career>> Update(Career request) {
+        public async Task<ActionResult<Career>> Edit(Career request) {
             if (request == null)
                 return RedirectToAction(nameof(Index));
 
@@ -90,9 +94,18 @@ namespace Client.Controllers {
 
             return RedirectToAction(nameof(Index));
         }
+        public async Task<ActionResult<Career>> Delete(int id) {
+            var response = new Career();
+            using (var _api = await _http.GetAsync(_url + id)) {
+                string _response = await _api.Content.ReadAsStringAsync();
+                response = JsonConvert.DeserializeObject<Career>(_response)!;
+            }
+
+            return View(response);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult<Career>> Delete(int id) {
+        public async Task<ActionResult<Career>> Delete(int id, Career request) {
             var response = new Career();
 
             using (var _api = await _http.DeleteAsync(_url + id)) {

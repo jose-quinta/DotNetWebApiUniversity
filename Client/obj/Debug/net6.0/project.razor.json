@@ -18374,8 +18374,8 @@
   "RootNamespace": "Client",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Faculty\\_FacultyDetails.cshtml",
-      "TargetPath": "Views\\Faculty\\_FacultyDetails.cshtml",
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\School\\Delete.cshtml",
+      "TargetPath": "Views\\School\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18384,13 +18384,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Career\\_CareerEdit.cshtml",
-      "TargetPath": "Views\\Career\\_CareerEdit.cshtml",
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Career\\Edit.cshtml",
+      "TargetPath": "Views\\Career\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Career\\_CareerCreate.cshtml",
-      "TargetPath": "Views\\Career\\_CareerCreate.cshtml",
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Career\\Delete.cshtml",
+      "TargetPath": "Views\\Career\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18404,8 +18404,23 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Faculty\\_FacultyCreate.cshtml",
-      "TargetPath": "Views\\Faculty\\_FacultyCreate.cshtml",
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Faculty\\Edit.cshtml",
+      "TargetPath": "Views\\Faculty\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\School\\Edit.cshtml",
+      "TargetPath": "Views\\School\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Career\\Details.cshtml",
+      "TargetPath": "Views\\Career\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\School\\Details.cshtml",
+      "TargetPath": "Views\\School\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18424,6 +18439,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Faculty\\Details.cshtml",
+      "TargetPath": "Views\\Faculty\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -18439,33 +18459,28 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\School\\_SchoolEdit.cshtml",
-      "TargetPath": "Views\\School\\_SchoolEdit.cshtml",
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Faculty\\Delete.cshtml",
+      "TargetPath": "Views\\Faculty\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Faculty\\_FacultyEdit.cshtml",
-      "TargetPath": "Views\\Faculty\\_FacultyEdit.cshtml",
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Career\\Create.cshtml",
+      "TargetPath": "Views\\Career\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\School\\_SchoolDetails.cshtml",
-      "TargetPath": "Views\\School\\_SchoolDetails.cshtml",
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\School\\Create.cshtml",
+      "TargetPath": "Views\\School\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Career\\_CareerDetails.cshtml",
-      "TargetPath": "Views\\Career\\_CareerDetails.cshtml",
+      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Faculty\\Create.cshtml",
+      "TargetPath": "Views\\Faculty\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\Career\\Index.cshtml",
       "TargetPath": "Views\\Career\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Views\\School\\_SchoolCreate.cshtml",
-      "TargetPath": "Views\\School\\_SchoolCreate.cshtml",
       "FileKind": "mvc"
     }
   ],
