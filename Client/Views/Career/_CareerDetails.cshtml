@@ -1,0 +1,43 @@
+@model Client.Models.Career
+
+<div class="modal-header">
+    <h1 class="modal-title fs-4" id="modalLabel">Details Career</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body overflow-y-auto">
+    <div class="form-group row my-1">
+        <div class="col-4">
+            <label asp-for="Name" class="form-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="Name" readonly class="form-control" />
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <div class="col-4">
+            <label asp-for="Code" class="form-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="Code" readonly class="form-control" />
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <div class="col-4">
+            <label asp-for="School" class="form-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="School.Name" readonly class="form-control" />
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <div class="col-4">
+            <label asp-for="School.Faculty" class="form-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="School.Faculty.Name" readonly class="form-control" />
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>

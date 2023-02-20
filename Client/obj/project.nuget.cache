@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "1vVIlHu5d+opfEUGmm4HogwaohK7yCYkzSYAm6136MPM39zcKtgfsh/p1+pcPf5anNR3xdQCw6H1vLP3JKC4NQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\José Quintana\\Desktop\\api\\DotNetWebApiUniversity\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\José Quintana\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.12\\microsoft.aspnetcore.jsonpatch.6.0.12.nupkg.sha512",
+    "C:\\Users\\José Quintana\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.12\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.12.nupkg.sha512",
+    "C:\\Users\\José Quintana\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\José Quintana\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\José Quintana\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

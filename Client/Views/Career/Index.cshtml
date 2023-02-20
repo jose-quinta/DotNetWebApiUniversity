@@ -1,0 +1,97 @@
+@model IEnumerable<Client.Models.Career>
+
+@{
+    ViewData["Title"] = "Careers List";
+}
+
+<div class="my-3 d-md-flex justify-content-evenly">
+    <div class="flex-grow-1 display-6 text-sm-center text-primary opacity-75">Career List</div>
+    <div class="text-end">
+        <button type="submit" class="create btn btn-info mt-1" data-toggle="modal">New Career</button>
+    </div>
+</div>
+
+@if (Model.Count() < 1) {
+    <h2 class="display-6 mt-3 text-center text-danger">Not careers yet</h2>
+} else {
+    <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-2 gx-sm-2 gx-md-2 gx-lg-2">
+    @foreach (var item in Model) {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="p-2 border overflow-hidden">
+                <p>@Html.DisplayNameFor(m => m.Name): <span class="fs-4 text-center">@item.Name</span></p>
+                <p>@Html.DisplayNameFor(m => m.Code): @item.Code &nbsp; @Html.DisplayNameFor(m => m.School): @item.School.Name</p>
+                <div class="overflow-hidden">
+                    <button type="submit" class="edit btn btn-primary mt-1" data-id="@item.Id" data-toggle="modal">Edit</button>
+                    <button type="submit" class="details btn btn-secondary mt-1" data-id="@item.Id" data-toggle="modal">Details</button>
+                    <form asp-controller="Faculty" asp-action="Delete" method="post" class="btn p-0 m-0">
+                        <input name="id" asp-for="@item.Id" hidden />
+                        <button type="submit" class="delete btn btn-danger mt-1" data-toggle="modal">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+    </div>
+}
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog-centered modal-dialog modal-md modal-dialog-scrollable" role="document">
+        <div class="modal-content" id="contentModal">
+        </div>
+  </div>
+</div>
+
+@section scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <script>
+        $(function () {
+            function render(url) {
+                $.ajax({
+                    type: 'GET',
+                    url: url,
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        $('#contentModal').html(data);
+                        $('#modal').modal('show');
+                    },
+                    error: function () {
+                        alert("Dynamic content load failed");
+                    }
+                });
+            }
+
+            function appendItemList() {
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("SchoolList", "School")',
+                    success: function (data) {
+                        for(i in data) {
+                            $('.select').append('<option value="' + data[i].value + '">' + data[i].text + '</option>');
+                        }
+                    },
+                    error: function () {
+                        alert("Dynamic content load failed");
+                    }
+                });
+            }
+
+            $(".create").click(function () {
+                var url = '@Url.Action("Details", "Career")' + "?type=Create";
+                render(url);
+                appendItemList();
+            });
+
+            $(".edit").click(function () {
+                var url = '@Url.Action("Details", "Career")' + "?type=Edit" + "&id=" + $(this).attr('data-id');
+                render(url);
+                appendItemList();
+            });
+
+            $(".details").click(function () {
+                var url = '@Url.Action("Details", "Career")' + "?type=Details" + "&id=" + $(this).attr('data-id');
+                render(url);
+            });
+        });
+
+    </script>
+}

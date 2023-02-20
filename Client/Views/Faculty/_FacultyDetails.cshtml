@@ -1,0 +1,48 @@
+@model Client.Models.Faculty
+
+@{
+    var br = "\n";
+    var sname = "School: ";
+    var cname = "\tCareer: ";
+}
+
+<div class="modal-header">
+    <h1 class="modal-title fs-4" id="modalLabel">Details Faculty</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body overflow-y-auto">
+    <div class="form-group row my-1">
+        <div class="col-4">
+            <label asp-for="Name" class="form-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="Name" readonly class="form-control" />
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <div class="col-4">
+            <label asp-for="Code" class="form-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="Code" readonly class="form-control" />
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <div class="col-12">
+            <label asp-for="Schools" class="form-label"></label>
+        </div>
+        <div class="col-12">
+            <textarea name="" rows="5" class="form-control">
+            @foreach (var school in Model.Schools) {
+                @sname @school.Name @br
+                @foreach (var career in school.Careers) {
+                    @cname @career.Name @br
+                }
+            }
+            </textarea>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
